@@ -1,0 +1,12 @@
+<div class="insightboard">
+  <div class="leadership-report" *ngIf="this.router.url != '/report/detail'">
+    <h1 class="insight-heading">Leadership Report</h1>
+    <ng-container *ngFor="let tag of tagService.tags">
+      <quantive-tag [tagName]="tag"></quantive-tag>
+    </ng-container>
+  </div>
+
+  <div class="leadership-report" *ngIf="this.router.url == '/report/detail'">
+    <quantive-tag-detail [name]="tagService.currentName"></quantive-tag-detail>
+  </div>
+</div>

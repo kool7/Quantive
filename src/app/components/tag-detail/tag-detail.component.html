@@ -1,0 +1,45 @@
+<div class="mr-20 ml-20">
+  <div class="fw-bold mb-20">
+    <button class="fw-bold mb-20" (click)="back()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+      </svg>
+      Back to all</button>
+  </div>
+
+  <div class="tag-heading">
+    <h3 class="fw-bold m-20">{{ name }}</h3>
+  </div>
+
+  <div class="mt-20">
+    <div class="row ml-20 col-heading">
+      <div class="col">
+        Items
+      </div>
+      <div class="col d-flex flex-row-reverse mr-80">
+        Progress
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row ml-20">
+      <div class="col objective">
+        Objective Name
+      </div>
+      <div class="col mr-20">
+        <div class="d-flex align-items-center flex-row-reverse">
+          <span class="p-1">67%</span>
+          <div class="progress bar-wrapper w-10">
+            <div class="progress-bar skill-bar" role="progressbar" style="width: 67%" aria-valuenow="67"
+              aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
